@@ -1,0 +1,33 @@
+<a id="close-sidebar-nav" class="header-3">
+    <svg class="icon-close" style="width: 25px; height: 25px; background-color: white; border-radius: 10px; padding-left: 5px; padding-top: 6px">
+        <use xlink:href="#icon-close"></use>
+    </svg>
+</a>
+<nav id="sidebar-nav" class="header-3" role="navigation" itemscope itemtype="http://schema.org/SiteNavigationElement">
+    <div id="sidebar-nav-logo"><a href="#"><img class="penci-lazy"
+                                                src="{{ URL::asset('images/icons/logo.png') }}"
+                                                data-src="{{ URL::asset('images/icons/logo.png') }}"
+                                                alt="Cùng nhau mua rẻ"/></a></div>
+    <ul class="menu">
+        <li class="megamenu menu-item menu-item-type-custom menu-item-object-custom current-menu-item current_page_item menu-item-home menu-item-1276">
+            <a href="/">Trang chủ</a>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1451">
+            <a href="#">Danh mục<span class="caret" style="float: right;"></span></a>
+            <ul class="sub-menu">
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1316"><a href="/category/thiet-bi-dien-tu">Thiết bị điện tử</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1316"><a href="/category/suc-khoe-lam-dep">Sức khỏe - Làm đẹp</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1316"><a href="/category/thi-truong">Thị trường</a></li>
+                <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1316"><a href="/category/thong-tin-ben-le">Chuyện bên lề</a></li>
+            </ul>
+        </li>
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1322"><a href="/topview">Xem nhiều nhất</a></li>
+        {{--<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1322"><a href="/live/covid19">Dịch Covid-19</a></li>--}}
+        <li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-1322"><a target="_blank" href="#">Liên hệ</a></li>
+    </ul>
+</nav>
+<style>
+    .element-visible {
+        display: block !important;
+    }
+</style>
