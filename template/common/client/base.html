@@ -8,7 +8,7 @@
     {% block title %}
     {% endblock title %}
 
-    {% include 'header-resources.html' %}
+    {% include 'common/client/header-resources.html' %}
 
     {% block seo-content %}
     {% endblock seo-content %}
@@ -19,18 +19,18 @@
 
 <body class="">
 {% comment %}Side-bar menu{% endcomment %}
-{% include 'side-bar.html' %}
+{% include 'common/client/side-bar.html' %}
 
 <div class="wrapper-boxed header-style-header-3">
     {% comment %}menu header{% endcomment %}
-    {% include 'header.html' %}
+    {% include 'common/client/header.html' %}
     {% comment %}main container{% endcomment %}
     {% block main-content %}
     {% endblock main-content %}
 </div>
 
-{% include 'footer.html' %}
-{% include 'footer-resources.html' %}
+{% include 'common/client/footer.html' %}
+{% include 'common/client/footer-resources.html' %}
 {% block footer-resource %}
 {% endblock footer-resource %}
 </body>

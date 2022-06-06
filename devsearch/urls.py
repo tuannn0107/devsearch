@@ -18,6 +18,7 @@ from django.urls import path
 from django.http import HttpResponse
 
 from devsearch import views
+from projects import views
 
 
 def product(request):
@@ -27,5 +28,6 @@ def product(request):
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('product/', product, name='My Product'),
-    path('welcome/', views.welcome)
+    path('welcome/', views.welcome),
+    path('projects/', views.create_project, name="create-project")
 ]
