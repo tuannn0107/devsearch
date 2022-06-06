@@ -1,51 +1,15 @@
-<div class="clear-footer"></div>
-<div id="widget-area">
-    <div class="container">
-        <div class="footer-widget-wrapper footer-widget-style-1">
-            <aside id="text-2" class="widget widget_text"><h4 class="widget-title penci-border-arrow"><span class="inner-arrow">Thông tin về chúng tôi</span></h4>
-                <div class="textwidget">
-                    <p>Chúng tôi cung cấp cho bạn thông tin hữu ích để giúp cuộc sống bạn trở nên dễ dàng hơn.</p></div>
-            </aside>
-            <aside id="penci_social_widget-2" class="widget penci_social_widget">
-                <div class="widget-social pc_alignleft remove-circle">
-                    <a href="https://www.facebook.com/muarecungnhau/" rel="nofollow" target="_blank">
-                        <svg class="icon footer-icon icon-facebook">
-                            <use xlink:href="#icon-facebook"></use>
-                        </svg>
-                    </a>
-                    <a href="https://www.facebook.com/muarecungnhau/" rel="nofollow" target="_blank">
-                        <svg class="icon footer-icon icon-twitter">
-                            <use xlink:href="#icon-twitter"></use>
-                        </svg>
-                    </a>
-                    <a href="https://www.facebook.com/muarecungnhau/" rel="nofollow" target="_blank">
-                        <svg class="icon footer-icon icon-telegram">
-                            <use xlink:href="#icon-telegram"></use>
-                        </svg>
-                    </a>
-                    <a href="https://www.facebook.com/muarecungnhau/" rel="nofollow" target="_blank">
-                        <svg class="icon footer-icon icon-google-plus">
-                            <use xlink:href="#icon-google-plus"></use>
-                        </svg>
-                    </a>
-                </div>
-            </aside>
-        </div>
-    </div>
-</div>
-
-<footer id="footer-section" class="penci-footer-social-media penci-lazy footer-social-remove-circle" itemscope>
-    <div class="container">
-        <div class="penci-flag-rlt-popup"></div>
-        <div class="footer-logo-copyright footer-not-logo footer-not-gotop">
-            <div id="footer-copyright"><p>@2019 - All Right Reserved. Designed and Developed by <a ref="nofollow"
-                                                                                                   href="https://cungnhaumuare.com"
-                                                                                                   target="_blank">https://cungnhaumuare.com</a></p></div>
-        </div>
-        <div class="penci-go-to-top-floating">
-            <svg class="icon icon-angle-up" style="width: 26px; height: 26px;">
-                <use xlink:href="#icon-angle-up"></use>
-            </svg>
-        </div>
-    </div>
-</footer>
+{% load static %}
+<script src="{% static '/js/client/lib/jquery/jquery-2.2.4.min.js' %}"></script>
+<script defer src="{% static '/js/client/source/autoptimize.js' %}"></script>
+<script src="{% static '/js/client/source/environment.js' %}"></script>
+<script src="{% static '/js/client/source/common.js' %}"></script>
+<script>
+    var current = location.pathname;
+    $('#header ul.menu > li > a').each(function(){
+        var $this = $(this);
+        // if the current path is like this link, make it active
+        if($this.attr('href').endsWith(current)){
+            $this.parent().addClass('current-menu-item');
+        }
+    })
+</script>

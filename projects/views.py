@@ -9,3 +9,6 @@ def welcome(request):
 def create_project(request):
     return render(request, 'client/project_form.html')
 
+
+def contact(request):
+    return render(request, 'client/contact.html')

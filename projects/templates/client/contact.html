@@ -1,0 +1,72 @@
+{% extends 'client/base.html' %}
+
+{% block main-content %}
+        <div class="container container-single container-single-magazine penci_sidebar right-sidebar penci-enable-lightbox">
+        <div id="main" class="penci-main-sticky-sidebar" style="width: 100% !important;">
+            <div class="theiaStickySidebar">
+                <article id="post-896" class="post type-post status-publish hentry">
+                    <div class="post-image">
+                        <div class="penci-owl-carousel penci-owl-carousel-slider penci-nav-visible" data-auto="true" data-lazy="true">
+                            <figure>
+                                <img class="owl-lazy"
+                                     data-src="http://resources.cungnhaumuare.com/resources/images/contact-wrapper.png"
+                                     alt="Liên hệ"
+                                     title="fitness-couple"/>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="post-entry blockquote-style-2">
+                        <div class="inner-post-entry entry-content">
+                            <p>Bạn có câu hỏi hay phản hồi nào? Làm thế nào để chúng tôi có thể phục vụ bạn tốt hơn? Chúng tôi thực sự rất vui khi lắng nghe được những góp ý từ bạn.
+                                Hãy để lại cho chúng tôi một tin nhắn, chúng tôi sẽ liên hệ với bạn.</p>
+                            <ul>
+                                <li><strong>Địa chỉ:</strong>  Việt Nam</li>
+                                <!--<li><strong>Điện thoại:</strong>  0123 456 789</li>-->
+                                <li><strong>Email:</strong>  <a href="mailto:cungnhaumuare.hotro@gmail.com">cungnhaumuare.hotro@gmail.com</a></li>
+                            </ul>
+                            <div id="alert" class="alert">
+                                <span class="closebtn">&times;</span>
+                                <p id="alertMessage" style="padding: 0 !important; margin: 0px !important;">Indicates a successful or positive action.</p>
+                            </div>
+                            <div role="form" class="wpcf7" id="wpcf7-f381-p74-o1" lang="en-US" dir="ltr">
+                                <div class="screen-reader-response"></div>
+                                    <p class="name">
+                                        <span class="wpcf7-form-control-wrap your-name">
+                                            <input type="text" id="customerName" name="customerName" value="" size="40" class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required" aria-required="true" aria-invalid="false" placeholder="Tên của bạn"/>
+                                        </span>
+                                    </p>
+                                    <p class="email">
+                                        <span class="wpcf7-form-control-wrap your-email">
+                                            <input type="email" id="customerEmail" name="customerEmail" value="" size="60" class="wpcf7-form-control wpcf7-text wpcf7-email wpcf7-validates-as-required wpcf7-validates-as-email" aria-required="true" aria-invalid="false" placeholder="Email của bạn (*)"/>
+                                        </span>
+                                    </p>
+                                    <p class="subject">
+                                        <span class="wpcf7-form-control-wrap your-subject">
+                                            <input type="text" id="feedbackSubject" name="feedbackSubject" value="" size="40" class="wpcf7-form-control wpcf7-text" aria-invalid="false" placeholder="Tiêu đề (*)"/>
+                                        </span>
+                                    </p>
+                                    <p class="message">
+                                        <span class="wpcf7-form-control-wrap your-message">
+                                            <textarea id="feedbackMessage"
+                                            name="feedbackMessage" cols="40" rows="10"
+                                            class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                            aria-required="true" aria-invalid="false"
+                                            placeholder="Cho chúng tôi biết nội dung.."></textarea>
+                                        </span>
+                                    </p>
+                                    <p class="submit">
+                                        <input type="submit" name="sendFeedback" value="Gửi phản hồi" class="wpcf7-form-control wpcf7-submit" onclick="sendFeedback()"/>
+                                    </p>
+                            <div class="penci-single-link-pages"></div>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+
+    </div>
+    <div class="clear-footer"></div>
+
+    </div>
+
+{% endblock main-content %}

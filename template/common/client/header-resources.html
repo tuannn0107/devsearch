@@ -1,3 +1,4 @@
+{% load static %}
 <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -42,11 +43,10 @@
     }
 </script>
 
-<link rel="shortcut icon" href="/images/icons/logo.png">
+<link rel="shortcut icon" href="{% static '/images/icons/logo.png' %}">
 <link rel='dns-prefetch' href='//fonts.googleapis.com'/>
 <link rel='dns-prefetch' href='//s.w.org'/>
-<meta name="generator" content="Laravel 7.x"/>
-<link type="text/css" media="all" href="/css/client/source/autoptimize.css" rel="stylesheet"/>
+<link type="text/css" media="all" href="{% static '/css/client/source/autoptimize.css' %}" rel="stylesheet"/>
 
 <script>
     var contextPath = '';

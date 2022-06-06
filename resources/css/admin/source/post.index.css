@@ -1,0 +1,16 @@
+.action-button {
+    margin-right: 8px;
+}
+
+.cl-danger {
+    color: #dc3545!important;
+}
+
+.cl-dark {
+    color: #343a40!important;
+}
+
+.search-input {
+    border: 1px solid #e9ecef;
+    width: 100%;
+}
