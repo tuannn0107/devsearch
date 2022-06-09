@@ -1,15 +1,3 @@
 {% load static %}
-<script src="{% static '/js/client/lib/jquery/jquery-2.2.4.min.js' %}"></script>
-<script defer src="{% static '/js/client/source/autoptimize.js' %}"></script>
-<script src="{% static '/js/client/source/environment.js' %}"></script>
-<script src="{% static '/js/client/source/common.js' %}"></script>
-<script>
-    var current = location.pathname;
-    $('#header ul.menu > li > a').each(function(){
-        var $this = $(this);
-        // if the current path is like this link, make it active
-        if($this.attr('href').endsWith(current)){
-            $this.parent().addClass('current-menu-item');
-        }
-    })
-</script>
+<script src="{% static 'uikit/app.js' %}"></script>
+<script src="{% static 'js/main.js' %}"></script>
